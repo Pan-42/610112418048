@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<tile>Hello World!!!</title>
+		<script type="js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<h1>Hello World !!!</h1
+
+		<label id="Id1">Mr.Siriporn</label>
+		<hr>
+		<form id = "fm1">
+			
+		<input id="in1"	typ="number" required>
+		<br>
+		<button>calulate</button>
+		</form>
+		<label id="Id_resul"></label>
+	</body>
+</html>
+<script>
+$(function(){
+	$("#Id1").text("610112418048");
+
+
+	// $("buttom"),click(){
+	// 	ver value = $("in1").val();
+	// 	ver result = value* value;
+	// 	$("Id_resul").html(result);
+
+	$("fm1").Submit(function(event){
+		var value = $("#in1").val();
+		var result = value * value;
+		event.preventDefault();
+	}
+
+	});
+});//	JQuery	hand	//	ready
+</script>

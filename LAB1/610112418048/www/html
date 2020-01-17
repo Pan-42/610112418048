@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<tile>Hello World!!!</title>
+		<script type="js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		<h1>Hello World !!!</h1
+
+		<label id="Id1"Mr.Siriporn</label>
+		<hr>
+		<input id="in1"	typ="text"></inpout>
+		<br>
+		<buttom>calulate</buttom>
+		<br>
+		<label id="Id_resul"></label>
+	</body>
+</html>
+<script>
+$(function(){
+	$("#Id1"),text("610112418048");
+});//	JQuery	hand	//	ready
+</script>
