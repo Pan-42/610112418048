@@ -1,40 +1,37 @@
 <html>
-<body>
-<?php
-echo "Hello World !!!";
-
-$sname = "Urairam";
-$sports = array("Swimming","Running");
-?>
-<hr>
-<?="My name is Suparat " . $sname ?>
-
-<form action="../action/post.php" method="POST">
-    <select name="sl_sport">
-        <option>- Select -</option>
-        <option value="1">Football</option>
-        <option value="2">Tenis</option>
+    <body >
         <?php
-            foreach($sports as $Key => $sport){
-    ?>
-            <option value="<?=$key+3?>"><?=$sport?></option>
-        <?php } ?>
-    </select>
-    <button type="submit"> SEND </button>
-</form>
+            echo "Hello World!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
 
+            $sname = "Klomprakhon";
+            $sports = array("Swimming ","Running");
+        ?>
+        <hr >
+        <?="My name is Kiartisak " . $sname?>
+        <form action="../action/post.php" method="POST">
+            <select name="sl_sport">
+             <option>-Select-</option>
+                <option value="1">Football</option>
+                <option value="2">Tennis</option>
+                 <?php
+                foreach($sports as $key => $sport){
+                 ?>
+                <option value="<?=$key+3?>"><?=$sport?></option>
+                <?php } ?>
+                
+            </select>
+            <button type="submit">SEND</button>
+        </form>
+        <label id="lb_post"></label>
 
-<lable id="lb_post"></lable>
-
-</body>
+    </body>
 </html>
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script>
-$(function(){
-    $("select").change(function(){
-        sp_val = $(this).val();
-        $("#lb_post").load("../action/post.php?getSport=" + sp_val);
+    $(function(){
+        $("select").change(function(){
+            sp_val = $(this).val();
+            $("#lb_post").load("../action/post.php?getSport=" + sp_val);
+        });
     });
-});
-
 </script>
